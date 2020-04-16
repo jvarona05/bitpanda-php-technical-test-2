@@ -3,14 +3,15 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Transaction;
 use Illuminate\Support\Facades\Storage;
+use App\Services\TransactionFactory;
 
 class TransactionConroller extends Controller
 {
-    public function __invoke()
+    public function __invoke(TransactionFactory $factory)
     {
-        return $file = Storage::get('transactions.csv');
-        return Transaction::all();
+        $transactions = $factory->make('db');
+
+        return $transactions->getAll();
     }
 }
