@@ -27,7 +27,7 @@ Welcome to the generated API reference.
 <!-- START_e91b0af0278029e1f6c103542135b6be -->
 ## Get Transactions
 
-Returns users filtered by country and status.
+Returns the transactions in a json with an extra parameter which will specify the source
 
 > Example request:
 

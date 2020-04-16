@@ -2,7 +2,7 @@
     "variables": [],
     "info": {
         "name": "Laravel API",
-        "_postman_id": "e6f1f184-9441-4d56-b94b-e73ebf2363dd",
+        "_postman_id": "366f2039-bf4d-4a47-8a62-5ddb6d9b740b",
         "description": "",
         "schema": "https:\/\/schema.getpostman.com\/json\/collection\/v2.0.0\/collection.json"
     },
@@ -42,7 +42,7 @@
                             "mode": "raw",
                             "raw": "[]"
                         },
-                        "description": "Returns users filtered by country and status.",
+                        "description": "Returns the transactions in a json with an extra parameter which will specify the source",
                         "response": []
                     }
                 }

@@ -15,7 +15,7 @@ class TransactionConroller extends Controller
     /**
      * Get Transactions 
      * 
-     * Returns users filtered by country and status.
+     * Returns the transactions in a json with an extra parameter which will specify the source
      *  
      * @queryParam source required The source of the data(db or csv). Example: db
      * 
