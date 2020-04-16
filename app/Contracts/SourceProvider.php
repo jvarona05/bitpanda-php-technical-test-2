@@ -6,4 +6,4 @@ use Illuminate\Support\Collection;
 
 Interface SourceProvider {
     public function getAll() : Collection;
- }
+}
