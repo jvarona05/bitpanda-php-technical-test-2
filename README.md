@@ -2,7 +2,7 @@
 
 # BitPanda PHP Technical Test #2
 
-Test to demonstrate skills and mastery in PHP. 
+Test to demonstrate skills and mastery in PHP part 2🤣. 
 
 [API Documentation](https://jvarona05.github.io/bitpanda-php-technical-test-2/public/docs/).
 
