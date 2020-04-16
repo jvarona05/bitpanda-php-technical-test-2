@@ -1,0 +1,52 @@
+{
+    "variables": [],
+    "info": {
+        "name": "Laravel API",
+        "_postman_id": "e6f1f184-9441-4d56-b94b-e73ebf2363dd",
+        "description": "",
+        "schema": "https:\/\/schema.getpostman.com\/json\/collection\/v2.0.0\/collection.json"
+    },
+    "item": [
+        {
+            "name": "Transactions",
+            "description": "",
+            "item": [
+                {
+                    "name": "Get Transactions",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "localhost",
+                            "path": "api\/v1\/transactions",
+                            "query": [
+                                {
+                                    "key": "source",
+                                    "value": "db",
+                                    "description": "The source of the data(db or csv).",
+                                    "disabled": false
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "Returns users filtered by country and status.",
+                        "response": []
+                    }
+                }
+            ]
+        }
+    ]
+}
