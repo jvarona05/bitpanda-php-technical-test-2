@@ -2,6 +2,8 @@
 
 namespace App\Contracts;
 
+use Illuminate\Support\Collection;
+
 Interface SourceProvider {
-    public function getAll();
+    public function getAll() : Collection;
  }

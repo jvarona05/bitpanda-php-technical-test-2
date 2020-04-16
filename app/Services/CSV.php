@@ -2,12 +2,13 @@
 
 namespace App\Services;
 
+use Illuminate\Support\Collection;
 use App\Contracts\SourceProvider;
 use App\Transaction;
 
 class CSV implements SourceProvider
 {
-    public function getAll()
+    public function getAll() : Collection
     {
         $fname = storage_path('data/transactions.csv');
         
@@ -17,13 +18,13 @@ class CSV implements SourceProvider
         
         $key = fgetcsv($fp,"1024",",");
         
-        $json = array();
-            while ($row = fgetcsv($fp,"1024",",")) {
-            $json[] = array_combine($key, $row);
+        $transactions = collect();
+        while ($row = fgetcsv($fp,"1024",",")) {
+            $transactions->push(new Transaction(array_combine($key, $row)));
         }
         
         fclose($fp);
         
-        return json_encode($json);
+        return $transactions;
     }
 }
