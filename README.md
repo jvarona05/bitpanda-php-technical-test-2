@@ -1,6 +1,6 @@
 <p align="center"><img src="https://theme.zdassets.com/theme_assets/624144/6a8455c16fd14684884098941e1317cc5173b353.png" width="400"></p>
 
-# BitPanda PHP Technical Test #1
+# BitPanda PHP Technical Test #2
 
 Test to demonstrate skills and mastery in PHP. 
 
