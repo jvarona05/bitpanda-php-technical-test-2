@@ -20,6 +20,7 @@ class TransactionConroller extends Controller
      * @queryParam source required The source of the data(db or csv). Example: db
      * 
      * @param TransactionRequest $request
+     * @param TransactionFactory $factory
      *  
      * @return \Illuminate\Http\Response
      */
