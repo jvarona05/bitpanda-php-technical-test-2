@@ -10,9 +10,9 @@ class CSV implements SourceProvider
 {
     public function getAll() : Collection
     {
-        $fname = storage_path('data/transactions.csv');
+        $filePath = storage_path('data/transactions.csv');
         
-        if (!($fp = fopen($fname, 'r'))) {
+        if (!($fp = fopen($filePath, 'r'))) {
             die("Can't open file...");
         }
         
